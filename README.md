@@ -7,4 +7,7 @@
 
 ### Temas:
 
-- 01-Emmet
+- 01-emmet
+- 02-html
+- 03-html5
+- 04-pug
