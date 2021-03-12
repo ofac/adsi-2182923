@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors: RGB - Percentage</title>
+    <style>
+        div.row {
+            margin: 0px auto;
+        }
+        div.row1,
+        div.row2 {
+            width: 600px; /*5*120=600*/
+        }
+        div.row3 { width: 480px; } /*4*120=480*/
+        div.row4 { width: 360px; } /*3*120=360*/
+        div.box {
+            background-color:rgb(50%, 50%, 50%);
+            display: inline-block;
+            font: 0.7em Arial;
+            height: 120px;
+            line-height: 11em;
+            margin-left: -4px;
+            text-align: center;
+            width: 120px;
+        }
+        .txt-white {
+            color: rgb(100%, 100%, 100%);
+        }
+        /* Row1 - - - - - - - - - - - - - - - - - */
+        div.maroon { background-color: rgb(50%, 0%, 0%); }
+        div.red    { background-color: rgb(100%, 0%, 0%); }
+        div.orange { background-color: rgb(100%, 65%, 0%); }
+        div.yellow { background-color: rgb(100%, 100%, 0%); }
+        div.olive  { background-color: rgb(50%, 50%, 0%); }
+        /* Row2 - - - - - - - - - - - - - - - - - */
+        div.purple  { background-color: rgb(50%, 0%, 50%); }
+        div.fuchsia { background-color: rgb(100%, 0%, 100%); }
+        div.white   { background-color: rgb(100%, 100%, 100%); }
+        div.lime    { background-color: rgb(0%, 100%, 0%); }
+        div.green   { background-color: rgb(0%, 50%, 0%); }
+        /* Row3 - - - - - - - - - - - - - - - - - */
+        div.navy   { background-color: rgb(0%, 0%, 50%); }
+        div.blue   { background-color: rgb(0%, 0%, 100%); }
+        div.aqua   { background-color: rgb(0%, 100%, 100%); }
+        div.teal   { background-color: rgb(0%, 50%, 50%); }
+        /* Row4 - - - - - - - - - - - - - - - - - */
+        div.black  { background-color: rgb(0%, 0%, 0%); }
+        div.silver { background-color: rgb(75%, 75%, 75%); }
+        div.gray   { background-color: rgb(50%, 50%, 50%); }
+    </style>
+</head>
+<body>
+    <div class="row row1">
+        <div class="box maroon txt-white">rgb(50%, 0%, 0%)</div>
+        <div class="box red">rgb(100%, 0%, 0%)</div>
+        <div class="box orange">rgb(100%, 65%, 0%)</div>
+        <div class="box yellow">rgb(100%, 100%, 0%)</div>
+        <div class="box olive txt-white">rgb(50%, 50%, 0%)</div>
+    </div>
+    <div class="row row2">
+        <div class="box purple txt-white">rgb(50%, 0%, 50%)</div>
+        <div class="box fuchsia">rgb(100%, 0%, 100%)</div>
+        <div class="box white">rgb(100%, 100%, 100%)</div>
+        <div class="box lime">rgb(0%, 100%, 0%)</div>
+        <div class="box green txt-white">rgb(0%, 50%, 0%)</div>
+    </div>
+    <div class="row row3">
+        <div class="box navy txt-white">rgb(0%, 0%, 50%)</div>
+        <div class="box blue">rgb(0%, 0%, 100%)</div>
+        <div class="box aqua">rgb(0%, 100%, 100%)</div>
+        <div class="box teal txt-white">rgb(0%, 50%, 50%)</div>
+    </div>
+    <div class="row row4">
+        <div class="box black txt-white">rgb(0%, 0%, 0%)</div>
+        <div class="box silver">rgb(75%, 75%, 75%)</div>
+        <div class="box gray txt-white">rgb(50%, 50%, 50%)</div>
+    </div>
+</body>
+</html>

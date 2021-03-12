@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors: HSL - Hue Saturation Lightness</title>
+    <style>
+        div.row {
+            margin: 0px auto;
+        }
+        div.row1,
+        div.row2 {
+            width: 600px; /*5*120=600*/
+        }
+        div.row3 { width: 480px; } /*4*120=480*/
+        div.row4 { width: 360px; } /*3*120=360*/
+        div.box {
+            background-color:hsl(0, 0%, 50%);
+            display: inline-block;
+            font: 0.7em Arial;
+            height: 120px;
+            line-height: 11em;
+            margin-left: -4px;
+            text-align: center;
+            width: 120px;
+        }
+        .txt-white {
+            color: hsl(0, 0%, 100%);
+        }
+        /* Row1 - - - - - - - - - - - - - - - - - */
+        div.maroon { background-color: hsl(0, 100%, 25%); }
+        div.red    { background-color: hsl(0, 100%, 50%); }
+        div.orange { background-color: hsl(39, 100%, 50%); }
+        div.yellow { background-color: hsl(60, 100%, 50%); }
+        div.olive  { background-color: hsl(60, 100%, 25%); }
+        /* Row2 - - - - - - - - - - - - - - - - - */
+        div.purple  { background-color: hsl(300, 100%, 25%); }
+        div.fuchsia { background-color: hsl(300, 100%, 50%); }
+        div.white   { background-color: hsl(0, 0%, 100%); }
+        div.lime    { background-color: hsl(120, 100%, 50%); }
+        div.green   { background-color: hsl(120, 100%, 25%); }
+        /* Row3 - - - - - - - - - - - - - - - - - */
+        div.navy   { background-color: hsl(240, 100%, 25%); }
+        div.blue   { background-color: hsl(240, 100%, 50%); }
+        div.aqua   { background-color: hsl(180, 100%, 50%); }
+        div.teal   { background-color: hsl(180, 100%, 25%); }
+        /* Row4 - - - - - - - - - - - - - - - - - */
+        div.black  { background-color: hsl(0, 0%, 0%); }
+        div.silver { background-color: hsl(0, 0%, 75%); }
+        div.gray   { background-color: hsl(0, 0%, 50%); }
+    </style>
+</head>
+<body>
+    <div class="row row1">
+        <div class="box maroon txt-white">hsl(0, 100%, 25%)</div>
+        <div class="box red">hsl(0, 100%, 50%)</div>
+        <div class="box orange">hsl(39, 100%, 50%)</div>
+        <div class="box yellow">hsl(60, 100%, 50%)</div>
+        <div class="box olive txt-white">hsl(60, 100%, 25%)</div>
+    </div>
+    <div class="row row2">
+        <div class="box purple txt-white">hsl(300, 100%, 25%)</div>
+        <div class="box fuchsia">hsl(300, 100%, 50%)</div>
+        <div class="box white">hsl(0, 0%, 100%)</div>
+        <div class="box lime">hsl(120, 100%, 50%)</div>
+        <div class="box green txt-white">hsl(120, 100%, 25%)</div>
+    </div>
+    <div class="row row3">
+        <div class="box navy txt-white">hsl(240, 100%, 25%)</div>
+        <div class="box blue">hsl(240, 100%, 50%)</div>
+        <div class="box aqua">hsl(180, 100%, 50%)</div>
+        <div class="box teal txt-white">hsl(180, 100%, 25%)</div>
+    </div>
+    <div class="row row4">
+        <div class="box black txt-white">hsl(0, 0%, 0%)</div>
+        <div class="box silver">hsl(0, 0%, 75%)</div>
+        <div class="box gray txt-white">hsl(0, 0%, 50%)</div>
+    </div>
+</body>
+</html>
