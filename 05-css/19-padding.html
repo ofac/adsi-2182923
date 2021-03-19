@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+    <style>
+        section.box-solid {
+            border: 2px solid #333;
+            background-color: #666;
+            height: 200px;
+            margin: 100px auto;
+            padding: 40px;
+            width: 200px;
+        }
+        section.box-solid div.box {
+            background-color: #aaa;
+            height: 80px;
+            /* Padding */
+            padding-top: 40px;
+            padding-right: 30px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            /* Shorthand */
+            padding: 40px 30px 20px 10px;
+            /* - - - - - - - - - - - - */
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <section class="box-solid">
+        <div class="box">BOX</div>
+    </section>
+</body>
+</html>
