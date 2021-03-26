@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders</title>
+    <style>
+        h2 {
+            border: 1px solid gray;
+            height: 250px;
+            padding: 10px;
+            margin: 20px auto;
+            text-align: center;
+            width: 400px;
+        }
+        h2.bw {
+            border-top-width: 10px;
+            border-right-width: 20px;
+            border-bottom-width: 10px;
+            border-left-width: 20px;
+            /* Shorthand */
+            border-width: 10px 20px;
+        }
+        h2.bc {
+            border-width: 10px;
+            border-top-color: red;
+            border-right-color: green;
+            border-bottom-color: blue;
+            border-left-color: fuchsia;
+            /* Shorthand */
+            border-color: red green blue fuchsia;
+        }
+        h2.bs {
+            border-width: 5px;
+            border-top-style: solid;
+            border-right-style: dotted;
+            border-bottom-style: dashed;
+            border-left-style: double;
+            /* Shorthand */
+            border-style: solid dotted dashed double;
+        }
+        h2.bsh {
+            border-width: 10px;
+            border-color: crimson;
+            border-style: dotted;
+            /* Shorthand */
+            border: 10px dotted crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>Borders</h1>
+    <h2 class="bw">Border Width</h2>
+    <h2 class="bc">Border Color</h2>
+    <h2 class="bs">Border Style</h2>
+    <h2 class="bsh">Border Shorthand</h2>
+
+
+</body>
+</html>
