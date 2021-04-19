@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Position Absolute</title>
+	<style>
+		section.bigbox {
+			border: 2px solid gray;
+			margin: 0px auto;
+			width: 400px;
+		} 
+		h4 {
+			text-align: center;
+		}
+		section.bigbox div {
+			border: 2px solid silver;
+			margin: 5px;
+			padding: 20px;
+		}
+		section.bigbox div.smallbox {
+			display: inline-block; 
+			width: 76px;
+		}
+		div.boxabs {
+			background-color: white;
+			position: absolute;
+			left: 740px;
+			top: 360px;
+		}
+	</style>
+</head>
+<body>
+	<h4>Normal Position</h4>
+	<section class="bigbox">
+		<div class="smallbox">Box 1</div>
+		<div class="smallbox">Box 2</div>
+		<div class="smallbox">Box 3</div>
+		<div class="largebox">Box 4</div>
+	</section>
+	<h4>Absolute Position in Box 2</h4>
+	<section class="bigbox">
+		<div class="smallbox">Box 1</div>
+		<div class="smallbox boxabs">Box 2</div>
+		<div class="smallbox">Box 3</div>
+		<div class="largebox">Box 4</div>
+	</section>
+</body>
+</html>

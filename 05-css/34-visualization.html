@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Visualization</title>
+	<style>
+		h3 {
+			text-align: center;
+		}
+		section.bigbox,
+		section.bigbox2 {
+			border: 2px solid gray;
+			margin: 0px auto;
+			padding: 20px;
+			width: 400px;
+		}
+		section.bigbox div.box {
+			border: 2px solid silver;
+			display: inline-block;
+			font-size: 4em;
+			height: 100px;
+			line-height: 1.6em;
+			margin: 10px;
+			text-align: center;
+			width: 100px;
+		}
+		section.bigbox div.box5 {
+			display: none;
+		}
+		section.bigbox div.boxv {
+			visibility: hidden;
+		}
+		section.bigbox2 div,
+		section.bigbox2 a {
+			border: 2px solid silver;
+			padding: 10px;
+			margin: 10px;
+		}
+		section.bigbox2 div.linea {
+			display: inline;
+		}
+		section.bigbox2 a.bloque {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<h3> 5 = display: none </h3>
+	<section class="bigbox">
+		<div class="box">1</div>
+		<div class="box">2</div>
+		<div class="box">3</div>
+		<div class="box">4</div>
+		<div class="box box5">5</div>
+		<div class="box">6</div>
+		<div class="box">7</div>
+		<div class="box">8</div>
+		<div class="box">9</div>
+	</section>
+	<!--  -->
+	<h3> 5 = visibility: hidden </h3>
+	<section class="bigbox">
+		<div class="box">1</div>
+		<div class="box">2</div>
+		<div class="box">3</div>
+		<div class="box">4</div>
+		<div class="box boxv">5</div>
+		<div class="box">6</div>
+		<div class="box">7</div>
+		<div class="box">8</div>
+		<div class="box">9</div>
+	</section>
+	<!--  -->
+	<br>
+	<section class="bigbox2">
+		<div>Normal DIV</div>
+		<div class="linea">DIV with display: inline</div>
+		<a href="">Enlace Normal</a>
+		<a href="" class="bloque">Link with display: block</a>
+	</section>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Clear float</title>
+	<style>
+		h3 {
+			text-align: center;
+		}
+		section.bigbox {
+			border: 2px solid gray;
+			margin: 0px auto;
+			padding: 20px;
+			width: 400px;
+		}
+		section.bigbox p {
+			border: 2px solid silver;
+		}
+		section.bigbox img {
+			float: left;
+		}
+		section.bigbox p.clear {
+			clear: left;
+		}
+	</style>
+</head>
+<body>
+	<h3>Float Position in image</h3>
+	<section class="bigbox">
+		<img src="imgs/steve.png">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, cumque reprehenderit, sit praesentium eum saepe commodi! Ipsum.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint voluptatum ducimus voluptas eveniet ipsam fuga debitis nemo vel maiores excepturi rerum, quam dolore, quis illo temporibus doloribus sapiente sed nam.
+		</p>
+	</section>
+	<!--  -->
+	<h3>Paragraph with clear: left</h3>
+	<section class="bigbox">
+		<img src="imgs/steve.png">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, cumque reprehenderit, sit praesentium eum saepe commodi! Ipsum.
+		</p>
+		<p class="clear">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint voluptatum ducimus voluptas eveniet ipsam fuga debitis nemo vel maiores excepturi rerum, quam dolore, quis illo temporibus doloribus sapiente sed nam.
+		</p>
+	</section>
+</body>
+</html>
