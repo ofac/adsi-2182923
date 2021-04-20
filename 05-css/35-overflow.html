@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        section {
+            margin: 40px auto;
+            width: 668px;
+        }
+        section article {
+            border: 1px solid #777;
+            display: inline-block;
+            height: 220px;
+            margin: 4px;
+            padding: 4px;
+            vertical-align: top;
+            width: 200px;
+        }
+        section article h2 {
+            background-color: #ccc;
+            padding: 8px;
+            text-align: center;
+            margin: 0px;
+        }
+        section article.art1 { overflow: visible; }
+        section article.art2 { overflow: hidden; }
+        section article.art3 { overflow: scroll; }
+
+    </style>
+</head>
+<body>
+    <section>
+        <article class="art1">
+            <h2>overflow: visible</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, amet quasi ipsam, corrupti dolorem, nobis harum distinctio a sapiente dolores numquam. In provident commodi itaque nesciunt illum harum explicabo sint laborum cupiditate. Corrupti, ducimus rem, ea, non dolor modi reprehenderit facere aperiam quod quis velit doloribus aspernatur dolore culpa accusantium!</p>
+        </article>
+        <article class="art2">
+            <h2>overflow: hidden</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, amet quasi ipsam, corrupti dolorem, nobis harum distinctio a sapiente dolores numquam. In provident commodi itaque nesciunt illum harum explicabo sint laborum cupiditate. Corrupti, ducimus rem, ea, non dolor modi reprehenderit facere aperiam quod quis velit doloribus aspernatur dolore culpa accusantium!</p>
+        </article>
+        <article class="art3">
+            <h2>overflow: scroll</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, amet quasi ipsam, corrupti dolorem, nobis harum distinctio a sapiente dolores numquam. In provident commodi itaque nesciunt illum harum explicabo sint laborum cupiditate. Corrupti, ducimus rem, ea, non dolor modi reprehenderit facere aperiam quod quis velit doloribus aspernatur dolore culpa accusantium!</p>
+        </article>
+    </section>
+</body>
+</html>

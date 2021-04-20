@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z Index (Deep)</title>
+    <style>
+        section.main {
+            margin: 100px auto;
+            width: 440px;
+        }
+        section.main div {
+            border: 2px solid #777;
+            font-size: 5em;
+            height: 120px;
+            line-height: 1.5em;
+            position: relative;
+            top: 0px; left: 0px;
+            text-align: center;
+            width: 200px;
+        }
+        section.main div.box1 {
+            background-color: #444;
+            color: #fff;
+            z-index: 1;
+        }
+        section.main div.box2 {
+            background-color: #777;
+            top: -50px; left: 120px;
+            z-index: 2;
+        }
+        section.main div.box3 {
+            background-color: #aaa;
+            top: -100px; left: 240px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <section class="main">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </section>
+</body>
+</html>
