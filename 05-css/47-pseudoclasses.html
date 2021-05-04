@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoClasses</title>
+    <style>
+        main {
+            margin: 40px auto;
+            font-family: Arial;
+            position: relative;
+            width: 400px;
+        }
+        main ul.menu {
+            list-style: none;
+            padding-left: 0px;
+        }
+        main ul.menu li {
+            display: inline-block;
+        }
+        main ul.menu li a:link,
+        main ul.menu li a:visited {
+            color: #fff;
+            background-color: #564a77;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+            width: 76px;
+        }
+         main ul.menu li a:hover {
+             background-color: #4a774a;
+         }
+         main ul.menu li a:active {
+             background-color: #b94c67;
+         }
+         /*main ul.menu li:first-child a,*/
+         main ul.menu li.active a {
+            color: #d4d476;
+            background-color: #2f2941;
+         }
+         /* - - - */
+         main input {
+             padding: 10px 20px;
+             border: 2px solid #bbb;
+             border-bottom: 4px solid #aaa;
+         }
+         main input:focus {
+             border-bottom: 4px solid #61b67a;
+             outline: none;
+         }
+         /* - - - */
+         main p:first-line {
+             background-color: #61b67a;
+             color: #fff;
+         }
+         main p:first-letter {
+             font-size: 4em;
+             color: #b94c67;
+         }
+         /* - - - */
+         main div.box {
+             background-color: #dd0;
+             height: 200px;
+             width: 200px;
+         }
+         main div.box:after {
+             background-color: #00d;
+             color: #fff;
+             content: '◀︎';
+             font-size: 4em;
+             height: 100px;
+             position: absolute;
+             left: 0px;
+             text-align: center;
+             width: 100px;
+         }
+         main div.box:before {
+             background-color: #d00;
+             color: #fff;
+             content: '▶︎';
+             font-size: 4em;
+             height: 100px;
+             position: absolute;
+             left: 100px; top: 546px;
+             text-align: center;
+             width: 100px;
+         }
+    </style>
+</head>
+<body>
+    <main>
+        <h3>:link, :visited, :active, :hover, :first-child</h3>
+        <ul class="menu">
+            <li class="active"><a href="javascript:;">Home</a></li>
+            <li><a href="javascript:;">About</a></li>
+            <li><a href="javascript:;">Services</a></li>
+            <li><a href="javascript:;">Contact</a></li>
+        </ul>
+        <h3>:focus</h3>
+        <input type="email" placeholder="Correo Electrónico">
+        <h3>:first-line, :first-letter</h3>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium minus, voluptatibus, sapiente consequatur voluptatum explicabo ut ad voluptate eos odit necessitatibus labore, assumenda doloremque corporis et eius vitae voluptates? Exercitationem?
+        </p>
+        <h3>:after, :before</h3>
+        <div class="box"></div>
+    </main>
+    <script>
+        let lis = document.getElementsByTagName('li');
+        for (let i = 0; i < lis.length; i++) {
+            lis[i].onclick = function() {
+               removeClasses();
+               this.classList.add('active');
+            }
+        }
+        function removeClasses() {
+            for (let i = 0; i < lis.length; i++) {
+                lis[i].className = '';
+            }
+        }
+    </script>
+</body>
+</html>

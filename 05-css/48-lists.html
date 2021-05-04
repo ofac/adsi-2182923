@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <style>
+        main {
+            margin: 40px auto;
+            width: 400px;
+        }
+        main ol.ol1 { list-style: decimal; }
+        main ol.ol2 { 
+            list-style: upper-roman;
+            list-style-position: inside; 
+        }
+        main ol.ol3 { list-style: lower-greek; }
+        /* - - - */
+        main ul.ul1 { list-style: disc; }
+        main ul.ul2 { list-style: circle; }
+        main ul.ul3 { list-style: square; }
+        /* - - - */
+        main ul.lii { list-style-image: url(imgs/basketball.png); }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h3>Ordered:</h3>
+        <ol class="ol1">
+            <li>Write Code</li>
+            <li>Compile Code</li>
+            <li>Fix Errors</li>
+            <li>Compile Again</li>
+        </ol>
+        <ol class="ol2">
+            <li>Write Code</li>
+            <li>Compile Code</li>
+            <li>Fix Errors</li>
+            <li>Compile Again</li>
+        </ol>
+        <ol class="ol3">
+            <li>Write Code</li>
+            <li>Compile Code</li>
+            <li>Fix Errors</li>
+            <li>Compile Again</li>
+        </ol>
+        <h3>Unordered:</h3>
+        <ul class="ul1">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ul>
+        <ul class="ul2">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ul>
+        <ul class="ul3">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ul>
+        <h3>List with images</h3>
+        <ul class="lii">
+            <li>Bull Chicago</li>
+            <li>NewYork Knicks</li>
+            <li>Miami Heat</li>
+            <li>LA Lakers</li>
+        </ul>
+    </main>
+</body>
+</html>
