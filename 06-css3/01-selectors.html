@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        li:first-of-type { background-color: #f08f8f; }
+        li:last-of-type  { background-color: #6bc550; }
+        li:nth-child(3)  { background-color: #5090c5; }
+        /* - - - */
+        table {
+            border-collapse: collapse;
+            color: #eee;
+            margin: 0px auto;
+            width: 240px;
+        }
+        table tr:nth-child(1n+1) {
+            background-color: #aaaaaa;
+        }
+        table tr:nth-child(2n+2) {
+            background-color: #807e7e;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>
+            <a href="index.html"> &larr; </a>
+            New Selectors
+        </h1>
+        <section>
+            <h2>li:first-of-type | li:last-of-type | li:nth-child(3)</h2>
+            <ul>
+                <li>Python</li>
+                <li>Ruby</li>
+                <li>PHP</li>
+                <li>C#</li>
+                <li>Java</li>
+            </ul>
+            <h2>tr:nth-child(1n+1) | tr:nth-child(2n+2)</h2>
+            <table>
+                <tr>
+                    <td>Cell 01</td>
+                </tr>
+                <tr>
+                    <td>Cell 02</td>
+                </tr>
+                <tr>
+                    <td>Cell 03</td>
+                </tr>
+                <tr>
+                    <td>Cell 04</td>
+                </tr>
+                <tr>
+                    <td>Cell 05</td>
+                </tr>
+                <tr>
+                    <td>Cell 06</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
