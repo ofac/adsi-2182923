@@ -23,6 +23,44 @@
         table tr:nth-child(2n+2) {
             background-color: #807e7e;
         }
+
+        nav {
+            margin: 0px auto;
+            width: 300px;
+        }
+        nav a:link,
+        nav a:visited {
+            background-color: #735885;
+            color: #fff;
+            padding: 5px 10px;
+            text-decoration: none;
+        }
+        nav a.active {
+            background-color: #3f2e4b;
+        }
+        article {
+            border: 2px solid #735885;
+            display: none;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: justify;
+            width: 300px;
+        }
+        article#home:target,
+        article#services:target,
+        article#contact:target {
+            display: block;
+        }
+        p.selection {
+            margin: 0px auto;
+            padding: 10px;
+            overflow: hidden;
+            width: 300px;
+        }
+        p.yellow::selection { background-color: #cc0;}
+        p.blue::selection   { background-color: #00c; color: #fff; }
+        p.red::selection    { background-color: #c00; color: #fff; }
+
     </style>
 </head>
 <body>
@@ -61,7 +99,56 @@
                     <td>Cell 06</td>
                 </tr>
             </table>
+            <h2>article#home:target</h2>
+            <nav>
+                <a href="#home" class="link">Home</a> &nbsp; | &nbsp;
+                <a href="#services" class="link">Services</a> &nbsp; | &nbsp;
+                <a href="#contact" class="link">Contact</a> 
+            </nav>
+            <article id="home">
+                <h2>Home</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fuga doloribus libero aperiam dicta, sunt vitae corporis delectus! Temporibus cupiditate nobis repellat totam maiores minus debitis iure perferendis eaque neque.
+                </p>
+            </article>
+            <article id="services">
+                <h2>Services</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fuga doloribus libero aperiam dicta, sunt vitae corporis delectus! Temporibus cupiditate nobis repellat totam maiores minus debitis iure perferendis eaque neque.
+                </p>
+            </article>
+            <article id="contact">
+                <h2>Contact</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fuga doloribus libero aperiam dicta, sunt vitae corporis delectus! Temporibus cupiditate nobis repellat totam maiores minus debitis iure perferendis eaque neque.
+                </p>
+            </article>
+            <h2>::selection</h2>
+            <p class="selection yellow">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi earum laboriosam temporibus? Quibusdam voluptates saepe aliquam inventore laudantium a exercitationem, enim eius illo quisquam quaerat qui corrupti minus! Molestiae, molestias!
+            </p>
+            <p class="selection blue">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi earum laboriosam temporibus? Quibusdam voluptates saepe aliquam inventore laudantium a exercitationem, enim eius illo quisquam quaerat qui corrupti minus! Molestiae, molestias!
+            </p>
+            <p class="selection red">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi earum laboriosam temporibus? Quibusdam voluptates saepe aliquam inventore laudantium a exercitationem, enim eius illo quisquam quaerat qui corrupti minus! Molestiae, molestias!
+            </p>
         </section>
     </main>
+
+    <script>
+        let lis = document.getElementsByClassName('link');
+        for (let i = 0; i < lis.length; i++) {
+            lis[i].onclick = function() {
+                removeActiveClass();
+                this.classList.add('active');
+            }
+        }
+        function removeActiveClass() {
+            for (let i = 0; i < lis.length; i++) {
+                lis[i].classList.remove('active');
+            }
+        }
+    </script>
 </body>
 </html>

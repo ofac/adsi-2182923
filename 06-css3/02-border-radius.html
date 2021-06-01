@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        div.box {
+            border: 4px solid #1a4c69;
+            height: 200px;
+            margin: 0px auto;
+            width: 200px;
+        }
+        div.br1 { border-radius: 50%; }
+        div.br2 { border-radius: 40px 0px; }
+        div.br3 { border-radius: 130px 0px 0px 130px; }
+        div.br4 { border-radius: 130px 0px 130px 130px; }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>
+            <a href="index.html"> &larr; </a>
+            Border Radius
+        </h1>
+        <section>
+            <h2>border-radius: 50%</h2>
+            <div class="box br1"></div>
+            <h2>border-radius: 40px 0px</h2>
+            <div class="box br2"></div>
+            <h2>border-radius: 130px 0px 0px 130px</h2>
+            <div class="box br3"></div>
+            <h2>border-radius: 130px 0px 130px 130px</h2>
+            <div class="box br4"></div>
+        </section>
+    </main>
+</body>
+</html>
