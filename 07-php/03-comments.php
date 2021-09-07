@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Comentarios</title>
+	<title>Comments</title>
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
@@ -10,24 +10,24 @@
 	<main class="container">
 		<section class="row mt-5">
 			<div class="col-md-8 offset-md-2">
-				<h1 class="text-center text-dark">Comentarios</h1>
+				<h1 class="text-center text-dark">Comments</h1>
 				<hr>
 				<?php 
-				// Definimos las clases del boton
-				$clases = "btn btn-lg btn-block btn-outline-primary";
+				// Define classes of button
+				$classes = "btn btn-lg btn-outline-dark";
 				/*
-					btn                = Boton
-					btn-lg              = Boton Grande
-					btn-block           = Boton Bloque
-					btn-outline-primary = Boton de borde Azul
+					btn                 = Button
+					btn-lg              = Button Large
+					btn-outline-primary = Button Border Blue
 				*/
-				# Se imprime la variable $clases dentro de class
+				# Print variable $classes inside of class
 				?>
-				<a href="javascript:;" class="<?=$clases?>"> Esto es un Boton </a>
+				<div class="d-grid">
+					<a href="javascript:;" class="<?=$classes?>"> This is a Button </a>
+				</div>
 			</div>
 		</section>
 	</main>
-	<script src="js/jquery-3.4.1.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

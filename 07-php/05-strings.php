@@ -2,71 +2,71 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Cadenas</title>
+	<title>Strings</title>
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
 	<main class="container">
 		<section class="row mt-5">
-			<div class="col-md-8 offset-md-2">
-				<h1 class="text-center text-dark">Cadenas</h1>
+			<div class="col-md-10 offset-md-1">
+				<h1 class="text-center text-dark">Strings</h1>
 				<hr>
 				<?php 
-					// Concatenar
+					// Concatenate
 					$tbl1  = 'table';
 					$tbl2  = 'table-bordered';
 					$tbl3  = 'table-hover table-dark';
-					$class = $tbl1." ".$tbl2." ".$tbl3." table-stripped";
+					$class = $tbl1." ".$tbl2." ".$tbl3." table-striped";
 					// Cadenas
-					$string1 = "ADSI 1804230";
+					$string1 = "ADSI 2182923";
 					$string2 = "sena caldas";
-					$string3 = "Hola Mundo";
+					$string3 = "Hello World";
 
 				?>
 				<table class="<?php echo $class; ?>">
-					<thead class="bg-secondary text-uppercase">
+					<thead class="text-uppercase">
 						<tr>
-							<th>Método</th>
-							<th>Descripción</th>
-							<th>Cadena</th>
-							<th>Resultado</th>
+							<th>Method</th>
+							<th>Description</th>
+							<th>String</th>
+							<th>Result</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td>strlen()</td>
-							<td>Logitud de Cadena</td>
+							<td>String Length</td>
 							<td><?php echo $string1; ?></td>
 							<td><?php echo strlen($string1); ?></td>
 						</tr>
 						<tr>
 							<td>strpos()</td>
-							<td>Posición Coinciden Cadenas</td>
-							<td>1804230</td>
-							<td><?php echo strpos($string1, '1804230'); ?></td>
+							<td>Position Match String</td>
+							<td>2182923</td>
+							<td><?php echo strpos($string1, '2182923'); ?></td>
 						</tr>
 						<tr>
 							<td>strtoupper()</td>
-							<td>Cadena en Mayúscula</td>
+							<td>Uppercase String</td>
 							<td><?php echo $string2; ?></td>
 							<td><?php echo strtoupper($string2); ?></td>
 						</tr>
 						<tr>
 							<td>ucwords()</td>
-							<td>Primera letra en Mayúscula</td>
+							<td>Uppercase first letter</td>
 							<td><?php echo $string2; ?></td>
 							<td><?php echo ucwords($string2); ?></td>
 						</tr>
 						<tr>
 							<td>strrev()</td>
-							<td>Invierte Cadena</td>
+							<td>Reverse String</td>
 							<td><?php echo $string2; ?></td>
 							<td><?php echo strrev($string2); ?></td>
 						</tr>
 						<tr>
 							<td>str_replace()</td>
-							<td>Reemplaza Cadena</td>
+							<td>Replace String</td>
 							<td><?php echo $string3; ?></td>
 							<td><?php echo str_replace("Mundo", "Jeremias", $string3); ?></td>
 						</tr>
@@ -81,7 +81,6 @@
 			</div>
 		</section>
 	</main>
-	<script src="js/jquery-3.4.1.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

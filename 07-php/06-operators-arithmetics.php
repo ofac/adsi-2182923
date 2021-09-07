@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Operadores Aritméticos</title>
+	<title>Operators Arithmetics</title>
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
@@ -10,7 +10,7 @@
 	<main class="container">
 		<section class="row mt-5">
 			<div class="col-md-8 offset-md-2">
-				<h1 class="text-center text-dark">Operadores Aritméticos</h1>
+				<h1 class="text-center text-dark">Operators Arithmetics</h1>
 				<hr>
 				<?php 
 					$x = 2;
@@ -18,22 +18,22 @@
 				<table class="table table-bordered table-striped table-hover table-dark">
 					<thead class="bg-secondary text-uppercase">
 						<tr>
-							<th>Operador</th>
-							<th>Descripción</th>
-							<th>Ejemplo</th>
-							<th>Resultado</th>
+							<th>Operator</th>
+							<th>Description</th>
+							<th>Example</th>
+							<th>Result</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td> + </td>
-							<td> Adición </td>
+							<td> Addition </td>
 							<td>$x=2; $x+2;</td>
 							<td><?php echo $x=$x+2; ?></td>
 						</tr>
 						<tr>
 							<td> - </td>
-							<td> Substracción </td>
+							<td> Subtraction </td>
 							<td>$x=2; 5-$x;</td>
 							<td>
 								<?php 
@@ -44,7 +44,7 @@
 						</tr>
 						<tr>
 							<td> * </td>
-							<td> Producto </td>
+							<td> Product </td>
 							<td>$x=4; $x*5;</td>
 							<td>
 								<?php 
@@ -55,7 +55,7 @@
 						</tr>
 						<tr>
 							<td> / </td>
-							<td> División </td>
+							<td> Division </td>
 							<td>15/5;</td>
 							<td>
 								<?php echo 15/5; ?>
@@ -63,7 +63,7 @@
 						</tr>
 						<tr>
 							<td> % </td>
-							<td> Residuo </td>
+							<td> Remainder </td>
 							<td>5%2;</td>
 							<td>
 								<?php echo 5%2; ?>
@@ -71,7 +71,7 @@
 						</tr>
 						<tr>
 							<td> ++ </td>
-							<td> Incremento </td>
+							<td> Increment </td>
 							<td>$x=5; $x++;</td>
 							<td>
 								<?php 
@@ -82,7 +82,7 @@
 						</tr>
 						<tr>
 							<td> ++ </td>
-							<td> Incremento </td>
+							<td> Increment </td>
 							<td>$x=5; ++$x;</td>
 							<td>
 								<?php 
@@ -93,7 +93,7 @@
 						</tr>
 						<tr>
 							<td> -- </td>
-							<td> Decremento </td>
+							<td> Decrement </td>
 							<td>$x=5; --$x;</td>
 							<td>
 								<?php 

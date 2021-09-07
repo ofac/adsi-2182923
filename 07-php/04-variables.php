@@ -20,28 +20,22 @@
 					$user2 = 2;
 					$user3 = 3;
 				?>
+
 				<div class="<?php echo $alert1; ?>"> 
-					<strong>El Usuario <?php echo $user1; ?> cumple los requisitos de ingreso</strong>
-					<button type="button" class="close" data-dismiss="alert">
-				    	<span aria-hidden="true">&times;</span>
-				  	</button>
+					<strong>The User <?php echo $user1; ?> meets the entry requirements</strong>
+					<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
 				</div>
 				<div class="<?php echo $alert2; ?>"> 
-					<strong>La Información del Usuario <?php echo $user2; ?> es incompleta</strong>
-					<button type="button" class="close" data-dismiss="alert">
-				    	<span aria-hidden="true">&times;</span>
-				  	</button>
+					<strong>User information <?php echo $user2; ?> is incomplete</strong>
+					<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
 				</div>
 				<div class="<?php echo $alert3; ?>"> 
-					<strong>El Usuario <?php echo $user3; ?> no se encuentra registrado</strong>
-					<button type="button" class="close" data-dismiss="alert">
-				    	<span aria-hidden="true">&times;</span>
-				  	</button>
+					<strong>The User <?php echo $user3; ?> is not registered</strong>
+					<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
 				</div>
 			</div>
 		</section>
 	</main>
-	<script src="js/jquery-3.4.1.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
