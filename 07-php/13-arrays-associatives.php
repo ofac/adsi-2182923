@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Arreglos (Asociativos)</title>
+	<title>Array (Associatives)</title>
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
@@ -10,7 +10,7 @@
 	<main class="container">
 		<section class="row mt-5">
 			<div class="col-md-8 offset-md-2 text-center">
-				<h1 class="text-dark">Arreglos (Asociativos)</h1>
+				<h1 class="text-dark">Array (Associatives)</h1>
 				<hr>
 				<?php 
 					$studends = array('Tanjiro Kamado'    => 16, 
@@ -24,9 +24,9 @@
 				?>
 				<div class="btn-group-vertical">
 				<?php foreach ($studends as $key => $value): ?>
-					<button type="button" class="btn btn-info text-left">
+					<button type="button" class="btn btn-dark text-start">
 						<?php echo $key ?>
-						<span class="badge badge-danger float-right"><?php echo $value ?></span>
+						<span class="badge bg-danger float-end"><?php echo $value ?></span>
 					</button>
 				<?php endforeach ?>
 				</div>
@@ -34,7 +34,6 @@
 			</div>
 		</section>
 	</main>
-	<script src="js/jquery-3.4.1.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 
 </body>

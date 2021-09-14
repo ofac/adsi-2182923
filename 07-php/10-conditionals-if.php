@@ -27,6 +27,7 @@
 					<span class="badge rounded-pill bg-success">Happy Weekend</span>
 				<?php endif ?>
 			</div>
+			
 		</section>
 	</main>
 	<script src="js/bootstrap.min.js"></script>

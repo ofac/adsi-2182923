@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Arreglos (Multidimensionales)</title>
+	<title>Array (Multidimensionals)</title>
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
@@ -10,11 +10,11 @@
 	<main class="container">
 		<section class="row mt-5">
 			<div class="col-md-8 offset-md-2 text-center">
-				<h1 class="text-dark">Arreglos (Multidimensionales)</h1>
+				<h1 class="text-dark">Array (Multidimensionals)</h1>
 				<hr>
 				<?php 
 					$bicycles = array(
-						'Santa Cruz'  => array('Nomad', 'MegaTower', 'HighTomer'),
+						'Santa Cruz'  => array('Nomad', 'MegaTower', 'HighTower'),
 						'Intense'     => array('Carbine', 'Tracer', 'Spider'),
 						'Specialized' => array('Enduro', 'Stumjumper', 'Camber')
 					);
@@ -33,7 +33,6 @@
 			</div>
 		</section>
 	</main>
-	<script src="js/jquery-3.4.1.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 
 </body>
