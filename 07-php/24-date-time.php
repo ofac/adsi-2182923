@@ -26,7 +26,7 @@
 						<?php echo date('l') ?>
 					</p>
 					<p class="lead text-center">
-						<strong>Year: </strong>
+						<strong>Full Year: </strong>
 						<?php echo date('Y') ?>
 					</p>
 					<p class="lead text-center">

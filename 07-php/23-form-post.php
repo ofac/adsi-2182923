@@ -15,7 +15,7 @@
 				<form action="" method="POST">
 					<div class="mb-3">
 						<label for="name">Name:</label>
-						<input type="text" class="form-control" name="name" id="name">
+						<input type="text" class="form-control" name="name" id="name" required>
 					</div>
 					<div class="mb-3">
 						<label for="email">Email:</label>

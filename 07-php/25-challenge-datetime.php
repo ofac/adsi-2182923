@@ -23,9 +23,13 @@
 				</form>
 				<?php 
 					if($_POST) {
-						$bd    = $_POST['birthdate'];
-						var_dump($bd);
+						// $bd    = $_POST['birthdate'];
+						// $ac    = date('Y-m-d');
+						// echo $bd . "<br>" . $ac;
 
+						echo "<div class='alert alert-success text-center h3'>
+							 ". 300 ." years old	
+							 </div>";
 					}
 				?>
 			</div>

@@ -26,11 +26,11 @@
 							<?php echo show_name('Hanamichi Sakuragi'); ?>
 						</h1>
 				    	<p class="lead"> 17 * 5 = 
-							<?php echo show_result(17, 5); ?>
+							<?php $result = show_result(17, 5); ?>
+							<?php echo $result; ?>
 						</p>
                     </div>
                 </div>
-
 			</div>
 		</section>
 	</main>
